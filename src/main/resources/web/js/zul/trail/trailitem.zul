@@ -1,0 +1,13 @@
+<hbox hflex="1" spacing="0">
+    <div width="15px"
+         sclass="breadcrumb-step-arrow-left-wrapper-active">
+        <div sclass="breadcrumb-step-arrow-left" />
+    </div>
+    <div hflex="1" height="30px" align="center"
+         sclass="breadcrumb-step-body-active">
+        <label value="Label" />
+    </div>
+    <div width="15px">
+        <div sclass="breadcrumb-step-arrow-right-active" />
+    </div>
+</hbox>

@@ -1,15 +1,19 @@
 <zk>
-    <trail>
+    <vlayout>
         <trailitem label="sean"/>
-        <trailitem>
-            is
-        </trailitem>
-        <trailitem image="/img/thumbs.png"
-                   dir="reverse">
-            cool
-        </trailitem>
-        <trailitem image="/img/bangerang.jpeg">
-            BANGERANG!
-        </trailitem>
-    </trail>
+        <trail sclass="z-trail" hflex="1">
+            <trailitem/>
+            <trailitem label="sean"/>
+            <trailitem>
+                is
+            </trailitem>
+            <trailitem image="/img/thumbs.png"
+                       dir="reverse">
+                cool
+            </trailitem>
+            <trailitem image="/img/star.png">
+                BANGERANG!
+            </trailitem>
+        </trail>
+    </vlayout>
 </zk>

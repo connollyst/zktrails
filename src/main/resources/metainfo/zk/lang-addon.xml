@@ -17,6 +17,7 @@
         <mold>
             <mold-name>default</mold-name>
             <mold-uri>mold/zktrail.js</mold-uri>
+            <css-uri>css/trail.css</css-uri>
         </mold>
     </component>
 
