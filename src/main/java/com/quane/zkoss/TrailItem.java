@@ -5,5 +5,5 @@ package com.quane.zkoss;
  *
  * @author Sean Connolly
  */
-public class Breadcrumb {
+public class TrailItem {
 }
