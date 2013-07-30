@@ -1,0 +1,31 @@
+<language-addon>
+    <addon-name>zktrail</addon-name>
+    <depends>zul</depends>
+    <language-name>xul/html</language-name>
+
+    <version>
+        <version-class>com.quane.zkoss.trail.Version</version-class>
+        <version-uid>1.0</version-uid>
+        <zk-version>5.0.5</zk-version><!-- or later -->
+    </version>
+
+    <component>
+        <component-name>trail</component-name>
+        <component-class>com.quane.zkoss.Trail</component-class>
+        <widget-class>zul.trail.Trail</widget-class>
+        <mold>
+            <mold-name>default</mold-name>
+            <mold-uri>mold/zktrail.js</mold-uri>
+        </mold>
+    </component>
+
+    <component>
+        <component-name>trailitem</component-name>
+        <component-class>com.quane.zkoss.TrailItem</component-class>
+        <widget-class>zul.trail.TrailItem</widget-class>
+        <mold>
+            <mold-name>default</mold-name>
+            <mold-uri>mold/zktrailitem.js</mold-uri>
+        </mold>
+    </component>
+</language-addon>
