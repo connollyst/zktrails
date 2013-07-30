@@ -6,7 +6,8 @@
     <version>
         <version-class>com.quane.zkoss.trail.Version</version-class>
         <version-uid>1.0</version-uid>
-        <zk-version>5.0.5</zk-version><!-- or later -->
+        <zk-version>5.0.5</zk-version>
+        <!-- or later -->
     </version>
 
     <component>
@@ -23,6 +24,7 @@
         <component-name>trailitem</component-name>
         <component-class>com.quane.zkoss.TrailItem</component-class>
         <widget-class>zul.trail.TrailItem</widget-class>
+        <text-as>label</text-as>
         <mold>
             <mold-name>default</mold-name>
             <mold-uri>mold/zktrailitem.js</mold-uri>
