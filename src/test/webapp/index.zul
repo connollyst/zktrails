@@ -1,3 +1,9 @@
 <zk>
     <label value="Hello World"/>
+    <trail>
+        <trailitem/>
+        <trailitem/>
+        <trailitem/>
+        <trailitem/>
+    </trail>
 </zk>
