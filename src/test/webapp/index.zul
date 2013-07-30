@@ -1,9 +1,15 @@
 <zk>
     <trail>
-        <trailitem label="Hello"/>
-        <trailitem label="World!"/>
+        <trailitem label="sean"/>
         <trailitem>
-            sean is cool
+            is
+        </trailitem>
+        <trailitem image="/img/thumbs.png"
+                   dir="reverse">
+            cool
+        </trailitem>
+        <trailitem image="/img/bangerang.jpeg">
+            BANGERANG!
         </trailitem>
     </trail>
 </zk>
