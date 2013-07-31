@@ -2,29 +2,31 @@
  *
  */
 .z-trail {
-    border-collapse: collapse;
-    padding: 0;
+    /* just a wrapper */
+}
+
+.z-trail-inner {
     margin: 0;
-    table-layout : fixed;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
 }
 
 /* SHAPE */
 
 .z-trailitem {
-    border-collapse: collapse;
-    padding: 0;
     margin: 0;
+    padding: 0;
     width: 100%;
-}
-
-.z-trailitem-container {
+    border-collapse: collapse;
 }
 
 .z-trailitem-left,
 .z-trailitem-center,
 .z-trailitem-right {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 .z-trailitem-center {
@@ -49,7 +51,8 @@
 }
 
 /* COLOR */
-.z-trailitem-center {
+.z-trailitem .z-trailitem-center {
+    color: white;
     background-image: linear-gradient(left, rgb(168, 197, 106) 0%, rgb(126, 175, 89) 30%);
     background-image: -o-linear-gradient(left, rgb(168, 197, 106) 0%, rgb(126, 175, 89) 30%);
     background-image: -moz-linear-gradient(left, rgb(168, 197, 106) 0%, rgb(126, 175, 89) 30%);
@@ -58,20 +61,39 @@
     background-image: -webkit-gradient(color-stop(0, rgb(168, 197, 106)), color-stop(0.3, rgb(126, 175, 89)), linear, left top, right top);
 }
 
-.z-trailitem-left {
+.z-trailitem-disd .z-trailitem-center {
+    color: rgb(110, 111, 113);
+    text-shadow: 1px 0 rgb(183, 187, 190);
+    background-image: linear-gradient(left, rgb(183, 187, 190) 0%, rgb(165, 171, 175) 30%);
+    background-image: -o-linear-gradient(left, rgb(183, 187, 190) 0%, rgb(165, 171, 175) 30%);
+    background-image: -moz-linear-gradient(left, rgb(183, 187, 190) 0%, rgb(165, 171, 175) 30%);
+    background-image: -webkit-linear-gradient(left, rgb(183, 187, 190) 0%, rgb(165, 171, 175) 30%);
+    background-image: -ms-linear-gradient(left, rgb(183, 187, 190) 0%, rgb(165, 171, 175) 30%);
+    background-image: -webkit-gradient(color-stop(0, rgb(183, 187, 190)), color-stop(0.3, rgb(165, 171, 175)), linear, left top, right top);
+}
+
+.z-trailitem .z-trailitem-left {
     background-color: rgb(168, 197, 106);
 }
 
-.z-trailitem-left .z-trailitem-arrow {
+.z-trailitem-disd .z-trailitem-left {
+    background-color: rgb(183, 187, 190);
+}
+
+.z-trailitem .z-trailitem-left .z-trailitem-arrow {
     border-left-color: white;
 }
 
-.z-trailitem-right {
+.z-trailitem .z-trailitem-right {
     background-color: transparent;
 }
 
-.z-trailitem-right .z-trailitem-arrow {
+.z-trailitem .z-trailitem-right .z-trailitem-arrow {
     border-left-color: rgb(126, 175, 89);
+}
+
+.z-trailitem-disd .z-trailitem-right .z-trailitem-arrow {
+    border-left-color: rgb(165, 171, 175);
 }
 
 /**

@@ -1,7 +1,7 @@
 <zk>
     <vlayout>
         <trailitem label="sean"/>
-        <trail sclass="z-trail" hflex="1">
+        <trail hflex="1">
             <trailitem/>
             <trailitem label="sean"/>
             <trailitem>
@@ -14,6 +14,7 @@
             <trailitem image="/img/star.png">
                 BANGERANG!
             </trailitem>
+            <trailitem label="This is Disabled" disabled="true"/>
         </trail>
     </vlayout>
 </zk>

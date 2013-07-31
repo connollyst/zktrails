@@ -17,14 +17,15 @@ public class TrailItem extends LabelImageElement {
 	private static final String NORMAL = "normal";
 	private static final String REVERSE = "reverse";
 
-	private String _dir = NORMAL;
+	private String dir = NORMAL;
+	private boolean disabled = false;
 
 	/**
 	 * Returns the direction.<br/>
 	 * Default: "normal".
 	 */
 	public String getDir() {
-		return _dir;
+		return dir;
 	}
 
 	/**
@@ -40,8 +41,8 @@ public class TrailItem extends LabelImageElement {
 		if (!isValidDir(dir)) {
 			throw new WrongValueException(dir);
 		}
-		if (!Objects.equals(_dir, dir)) {
-			_dir = dir;
+		if (!Objects.equals(this.dir, dir)) {
+			this.dir = dir;
 			smartUpdateDir();
 		}
 	}
@@ -51,7 +52,15 @@ public class TrailItem extends LabelImageElement {
 	}
 
 	private void smartUpdateDir() {
-		smartUpdate("dir", _dir);
+		smartUpdate("dir", dir);
+	}
+
+	public boolean isDisabled() {
+		return disabled;
+	}
+
+	public void setDisabled(boolean disabled) {
+		this.disabled = disabled;
 	}
 
 	/**
@@ -61,8 +70,11 @@ public class TrailItem extends LabelImageElement {
 	protected void renderProperties(ContentRenderer renderer)
 			throws IOException {
 		super.renderProperties(renderer);
-		if (!NORMAL.equals(_dir)) {
-			render(renderer, "dir", _dir);
+		if (!NORMAL.equals(dir)) {
+			render(renderer, "dir", dir);
+		}
+		if (disabled) {
+			render(renderer, "disabled", disabled);
 		}
 	}
 
